@@ -200,8 +200,9 @@ body, html{
 .intro{
     width:100%;
     height:100vh;
-    padding:150px 0px;
+    padding:100px 0px 50px;
     box-sizing: border-box;
+    min-height: 800px;
 }
 .introduce{
     margin-bottom:20px;
@@ -220,7 +221,7 @@ body, html{
 .intro-content .text{
     width:100%;
     background:lightsteelblue;
-    padding:50px;
+    padding:30px 50px;
     box-sizing: border-box;
 }
 .certificate{
@@ -244,10 +245,10 @@ body, html{
     flex-direction: column;
     border: 1px solid #939393;
     box-shadow: 0px 2px 3px rgba(0,0,0,0.3);
-    padding: 50px 0px;
+    padding: 20px 0px;
 }
 .certi-title{
-    font-size:20px;
+    font-size:18px;
     font-weight: bold;
 }
 .career-content{
@@ -269,8 +270,9 @@ body, html{
     width:100%;
     height:100vh;
     background:lavender;
-    padding:150px 0px;
+    padding:100px 0px 50px;
     box-sizing: border-box;
+    min-height: 800px;
 }
 .graphic-content,
 .develope-content{
@@ -283,7 +285,6 @@ body, html{
 }
 .skill-box{
     width:100%;
-    height:300px;
     background:white;
     padding:30px;
     box-sizing: border-box;
@@ -322,8 +323,14 @@ body, html{
 .port{
     width:100%;
     height:100vh;
-    padding:150px 0px;
+    padding:100px 0px 50px;
     box-sizing: border-box;
+    min-height: 800px;
+}
+.port-view{
+    width:100%;
+    height:100%;
+    overflow: hidden;
 }
 .port-wrap{
     width:100%;
@@ -334,7 +341,7 @@ body, html{
 }
 .port-wrap li{
     width:25%;
-    height:50%;
+    height:80%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -366,13 +373,19 @@ body, html{
     box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
 }
 .medifine{
-    background-image: url('img/port_1.jpg')
+    background-image: url('img/medifine.jpg')
 }
 .naver{
-    background-image: url('img/port_2.jpg')
+    background-image: url('img/naver.jpg')
 }
 .genesis{
-    background-image: url('img/port_3.jpg')
+    background-image: url('img/genesis.jpg')
+}
+.profile{
+    background-image: url('img/profile.jpg')
+}
+.atcodi{
+    background-image: url('img/atcodi.jpg')
 }
 .img_link{
     display: inline-block;
@@ -380,12 +393,15 @@ body, html{
     height:100%;
     color:black;
     text-decoration: underline;
+    line-height: 1.5;
+}
+.img_link .title-detail{
+    font-size:14px;
 }
 .port-tool{
     width:90%;
     height:25%;
     padding:0px 10px;
-    display:none;
 }
 .port-tool > div{
     margin:3px 0px;
@@ -402,7 +418,7 @@ body, html{
     right:0px;
     transform: translateY(100%);
 }
-.html, .css, .js {
+.design, .html, .css, .js {
     display:inline-block;
     width:50px;
     padding:3px;
@@ -411,6 +427,10 @@ body, html{
     color:white;
     font-weight: bold;
     margin-right:10px;
+    font-size:13px;
+}
+.design{
+    background:#333;
 }
 .html{
     background:coral;
@@ -426,23 +446,6 @@ span{
     font-size:14px;
 }
 
-/*active*/
-.port-wrap li.active{
-    width:50%;
-    height:80%;
-}
-.port-wrap li.active p{
-    font-size:40px;
-    margin-top: -100px;
-    text-decoration: underline;
-}
-.port-wrap li.active .port-box .port-tool{
-    width:70%;
-    padding:0px 50px;
-    align-self:center;
-    display:block;
-}
-
 /*contact*/
 .contact{
     width:100%;
@@ -450,6 +453,7 @@ span{
     background:darkgray;
     padding:150px 0px;
     box-sizing: border-box;
+    min-height: 720px;
 }
 .contact-content{
     width:100%;
