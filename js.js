@@ -1,8 +1,6 @@
 $(document).ready(function(){
     parallex();
     portSlide();
-
-    console.log(11)
 })
 
 function parallex(){
@@ -74,11 +72,20 @@ function portSlide(){
     var ulList = $('.port-wrap')
     var portList = ulList.children();
     var timer
+    var prev = $('.port').children('.inner').children('.prev')
+    var next = $('.port').children('.inner').children('.next')
     
     ulList.css({'width': 353 * portList.size() + (20 * (portList.size() - 1))})
 
     ulList.children().last().prependTo(ulList)
     ulList.css({'margin-left':-portList.width() - 20})
+
+    prev.on('click', function(){
+        prevSlide();
+    })
+    next.on('click', function(){
+        nextSlide();
+    })
 
     autoPlay();
 
@@ -91,4 +98,11 @@ function portSlide(){
         ulList.css({'margin-left': -portList.width() - 20})
         })
     }
+    function prevSlide(){
+        ulList.stop().animate({'margin-left':0},500,function(){
+            ulList.children().last().prependTo(ulList);
+            ulList.css({'margin-left': -portList.width() - 20})
+    })
+
+}
 }
