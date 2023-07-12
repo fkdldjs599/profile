@@ -439,7 +439,7 @@ body, html{
     right:0px;
     transform: translateY(100%);
 }
-.design, .html, .css, .js {
+.design, .html, .css, .js, .level {
     display:inline-block;
     width:50px;
     padding:3px;
@@ -462,6 +462,9 @@ body, html{
 .js{
     background:gold;
     color:black;
+}
+.level{
+    background:darkred;
 }
 span{
     font-size:14px;
