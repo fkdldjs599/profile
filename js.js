@@ -49,7 +49,7 @@ function parallex(){
         var targetPos = $(target).offset().top; //href의 top위치값
         //console.log(targetPos)
 
-        $('body,html').stop().animate({'scroll-top':targetPos},500);
+        $('body,html').stop().animate({'scrollTop':targetPos},500);
     }
 
     // section.on('wheel', onWheel)

@@ -392,25 +392,28 @@ body, html{
     height:70%;
     background:gray;
     overflow: hidden;
-    background: url('img/port_1.jpg') center center / cover;
+    background: url('img/port_1.jpg') center top / cover;
     border:1px solid #ddd;
     box-sizing: border-box;
     box-shadow: 0px 3px 5px rgba(0,0,0,0.1);
 }
 .medifine{
-    background-image: url('img/medifine.jpg')
+    background-image: url('img/medifine_full.png');
 }
 .naver{
-    background-image: url('img/naver.jpg')
+    background-image: url('img/naver_full.png');
 }
 .genesis{
-    background-image: url('img/genesis.jpg')
+    background-image: url('img/genesis_full.png');
 }
 .profile{
-    background-image: url('img/profile.jpg')
+    background-image: url('img/profile_full.png');
 }
 .atcodi{
-    background-image: url('img/atcodi.jpg')
+    background-image: url('img/atcodi_full.png');
+}
+.incom{
+    background-image: url('img/incom_full.png');
 }
 .img_link{
     display: inline-block;
