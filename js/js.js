@@ -144,39 +144,17 @@ $(document).ready(function(){
     });
     
 
-
     var winW = $(window).innerWidth();
     var footer = parseInt($('.footer').innerHeight());
     
-    if(winW < 768) {
-        $('.gotop_area').css({'bottom': footer + parseInt(20) + 'px'});
-        $('.gotop_area').css({'right': '16px'});
-    }else{
-        detectBottom();
-        $('.gotop_area').css({'right': '5vw'});
-    }
+    detectBottom();
 
     $(document).scroll(function(){
-        if(winW < 768) {
-            $('.gotop_area').css({'bottom': footer + parseInt(20) + 'px'});
-            $('.gotop_area').css({'right': '16px'});
-        }else{
-            detectBottom();
-            $('.gotop_area').css({'right': '5vw'});
-        }
+        detectBottom();
     });
 
     $(window).resize(function(){
-        var changeW = $(window).innerWidth();
-        // console.log(changeW)
-
-        if(changeW < 768) {
-            $('.gotop_area').css({'bottom': footer + parseInt(20) + 'px'});
-            $('.gotop_area').css({'right': '16px'});
-        }else{
-            detectBottom();
-            $('.gotop_area').css({'right': '5vw'});
-        }
+        detectBottom();
     });
 
     $('.gotop').click(function(){

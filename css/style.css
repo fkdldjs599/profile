@@ -1,7 +1,7 @@
-body {background: transparent; color: #2C3A3A;}
+body {background: transparent; color: #2C3A3A; overflow-x: hidden;}
 /*스크롤바*/
-body {-ms-overflow-style: none; scrollbar-width: 0; position: relative;}
-body::-webkit-scrollbar {display: none;}
+/* body {-ms-overflow-style: none; scrollbar-width: 0; position: relative;}
+body::-webkit-scrollbar {display: none;} */
 /*스크롤바*/
 body * {box-sizing: border-box;}
 body::selection {color: #fff; background: #4DA9A0;}
@@ -267,6 +267,7 @@ a img {width: 100%;}
     .sc2 .introtext .bold {font-size: 24px;}
     .sc2 .img_white .img_area {margin: 0;}
     
+    .sc3 {background: url("../img/sc3_mobbg.jpg") no-repeat center center / cover;}
     .sc3 .career_bg {gap: 50px;}
     .sc3 .career_bg .career_box {width: 100%;}
     
