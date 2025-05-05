@@ -1,8 +1,13 @@
 body {background: transparent; color: #2C3A3A; overflow-x: hidden;}
+a, a:focus, a:visited, a:active, button {color: #2c3a3a;}
 /*스크롤바*/
 /* body {-ms-overflow-style: none; scrollbar-width: 0; position: relative;}
 body::-webkit-scrollbar {display: none;} */
 /*스크롤바*/
+body::-webkit-scrollbar {width: 10px;}
+body::-webkit-scrollbar-thumb {background: #80CBC4; border-radius: 12px; box-sizing: border-box;}
+body::-webkit-scrollbar-track {background-color: #ddd;}
+
 body * {box-sizing: border-box;}
 body::selection {color: #fff; background: #4DA9A0;}
 .inner {width: 1074px; margin: 0 auto;}
@@ -285,7 +290,7 @@ a img {width: 100%;}
 
 @media (max-width: 432px) {
     .header .inner {padding: 8px 0;}
-    .header .h_right .nav_ul .nav_li .nav_a {padding: 10px 4px;}
+    .header .h_right .nav_ul .nav_li .nav_a {padding: 10px 6px;}
 
     .sc1 .white_box {width: calc(100% - 32px); max-width: inherit;}
 
