@@ -117,6 +117,15 @@ $(document).ready(function(){
         else if($(this).parent().hasClass('trip')){
             location.href='trip.html';
         }
+        else if($(this).parent().hasClass('detail')){
+            location.href='detail.html';
+        }
+        else if($(this).parent().hasClass('design')){
+            location.href='design.html';
+        }
+        else if($(this).parent().hasClass('hook')){
+            location.href='hook.html';
+        }
 
         return false;
     });

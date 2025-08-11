@@ -378,6 +378,12 @@ a img {width: 100%;}
 .subcontents .subcon .sub_box .gif_area img {width: 100%;}
 
 .subcontents .subcon .h2 {margin-bottom: 50px; font-size: 35px; font-weight: bold;}
+.subcontents .subcon .img_wrap {position: relative; width: 100%; margin-bottom: 100px;}
+.subcontents .subcon .img_wrap img {width: 100%;}
+.subcontents .subcon .img_wrap .link_a {display: inline-block; width: 24%; height: 8%; position: absolute; top: 67%; left: 3%;}
+.subcontents .subcon .img_wrap .pro_a {display: inline-block; width: 30%; height: 61%; position: absolute; top: 39%; left: 4.5%;}
+.subcontents .subcon .img_wrap .pro_a.pa2 {left: 35%;}
+.subcontents .subcon .img_wrap .pro_a.pa3 {left: 65.5%;}
 
 .mb_50 {margin-bottom: 50px;}
 
