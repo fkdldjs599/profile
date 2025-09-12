@@ -171,6 +171,64 @@ $(document).ready(function(){
     });
 
 
+    gsap.set(".sc2 .inner", {opacity: 0});
+
+    gsap.to(".sc2 .inner", {
+        scrollTrigger: {
+          trigger: ".sc2 .inner",
+          start: "-50% top",
+          onEnter:() => {
+            gsap.to(".sc2 .inner", {opacity:"1", duration:0.5})
+          },
+          onLeaveBack:() => {
+                gsap.to(".sc2 .inner", {opacity:"0", duration:0.5})
+          }
+        },
+      });
+
+      gsap.set(".sc3 .h2", {opacity: 0});
+      gsap.set(".sc3 .career_bg", {opacity: 0});
+
+      gsap.to(".sc3 .h2", {
+        scrollTrigger: {
+          trigger: ".sc3 .h2",
+        //   start: "-50% top",
+          onEnter:() => {
+            gsap.to(".sc3 .h2", {opacity:"1", duration:0.5})
+          },
+          onLeaveBack:() => {
+                gsap.to(".sc3 .h2", {opacity:"0", duration:0.5})
+          }
+        },
+      });
+
+      gsap.to(".sc3 .career_bg", {
+        scrollTrigger: {
+          trigger: ".sc3 .career_bg",
+          start: "-70% top",
+          onEnter:() => {
+            gsap.to(".sc3 .career_bg", {opacity:"1", duration:0.5})
+          },
+          onLeaveBack:() => {
+                gsap.to(".sc3 .career_bg", {opacity:"0", duration:0.5})
+          }
+        },
+      });
+
+
+      gsap.set(".sc4", {scale: 0.7});
+      gsap.to(".sc4", {
+        scrollTrigger: {
+          trigger: ".sc4",
+          start: "-80% top",
+          end: "top top",
+          scrub: 0.5,
+        },
+          scale: 1,
+          ease: "none", 
+      });
+
+
     
 
 });
