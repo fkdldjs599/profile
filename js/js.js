@@ -176,12 +176,12 @@ $(document).ready(function(){
     gsap.to(".sc2 .inner", {
         scrollTrigger: {
           trigger: ".sc2 .inner",
-          start: "-50% top",
+          start: "-60% top",
           onEnter:() => {
-            gsap.to(".sc2 .inner", {opacity:"1", duration:0.5})
+            gsap.to(".sc2 .inner", {opacity:"1", duration:0.5, y: -20})
           },
           onLeaveBack:() => {
-                gsap.to(".sc2 .inner", {opacity:"0", duration:0.5})
+                gsap.to(".sc2 .inner", {opacity:"0", duration:0.5, y: 0})
           }
         },
       });
@@ -192,9 +192,9 @@ $(document).ready(function(){
       gsap.to(".sc3 .h2", {
         scrollTrigger: {
           trigger: ".sc3 .h2",
-        //   start: "-50% top",
+        //   start: "-70% top",
           onEnter:() => {
-            gsap.to(".sc3 .h2", {opacity:"1", duration:0.5})
+            gsap.to(".sc3 .h2", {opacity:"1", duration:0.5, y: -20})
           },
           onLeaveBack:() => {
                 gsap.to(".sc3 .h2", {opacity:"0", duration:0.5})
@@ -205,9 +205,9 @@ $(document).ready(function(){
       gsap.to(".sc3 .career_bg", {
         scrollTrigger: {
           trigger: ".sc3 .career_bg",
-          start: "-70% top",
+          start: "-100% top",
           onEnter:() => {
-            gsap.to(".sc3 .career_bg", {opacity:"1", duration:0.5})
+            gsap.to(".sc3 .career_bg", {opacity:"1", duration:0.5, delay: 0.5, y: -20})
           },
           onLeaveBack:() => {
                 gsap.to(".sc3 .career_bg", {opacity:"0", duration:0.5})
@@ -216,7 +216,7 @@ $(document).ready(function(){
       });
 
 
-      gsap.set(".sc4", {scale: 0.7});
+      gsap.set(".sc4", {scale: 0.6});
       gsap.to(".sc4", {
         scrollTrigger: {
           trigger: ".sc4",
